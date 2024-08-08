@@ -1,0 +1,13 @@
+beautifulsoup4==4.12.3
+itemadapter==0.9.0
+langdetect==1.0.9
+Scrapy==2.11.1
+unstructured==0.14.4
+pikepdf==9.0.0
+pillow-heif==0.16.0
+pdf2image==1.17.0
+python-dotenv==1.0.1
+unstructured_inference==0.7.36
+pytesseract==0.3.10
+pdfminer.six
+opencv-python-headless
