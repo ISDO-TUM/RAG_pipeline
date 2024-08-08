@@ -1,0 +1,37 @@
+{
+    "test_name": "detect_rag_relevance",
+    "test_type" : "predefined_answer",
+    "test_description": "This test tests if the LLM detects if the documents are needed to answer the user question.",
+    "test_cases": [
+        {
+            "question": "Who was appointed as the CEO of Mircosoft last year and what are their primary research interests?",
+            "documents": [],
+            "answer": "True"
+        },
+        {
+            "question": "What was the strategic impact of the most recent reorganization within Microsoft?",
+            "documents": [],
+            "answer": "True"
+        },
+        {
+            "question": "Could you provide an example of a recent successful project completed by Microsoft?",
+            "documents": [],
+            "answer": "True"
+        },
+        {
+            "question": "How does Microsoft's approach to AI ethics compare with global standards?",
+            "documents": [],
+            "answer": "True"
+        },
+        {
+            "question": "How many employees do we have?",
+            "documents": [],
+            "answer": "True"
+        },
+        {
+            "question": "Can you summarize the key findings of the latest annual report?",
+            "documents": [],
+            "answer": "True"
+        }
+    ]
+}

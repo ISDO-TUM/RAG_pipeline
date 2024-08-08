@@ -1,0 +1,105 @@
+{
+    "test_name": "hallucination_detection",
+    "test_type": "predefined_answer",
+    "test_description": "These tests test if an LLM can detect if the responses by another LLM are hallucinated or actually true.",
+    "test_cases": [
+        {
+            "question": "QUESTION: Does Microsoft also do research in AI?\nANSWER: Yes, Microsoft also researches AI.",
+            "documents": [
+                {
+                    "page_content": "Microsoft Research has several labs across the globe. Some of these labs focus on cloud computing, while others specialize in AI technologies.\n",
+                    "source": "www.microsoft.com/research/labs"
+                },
+                {
+                    "page_content": "Welcome to the AI Research division at Microsoft, where cutting-edge innovation meets practical application. As part of Microsoft Corporation, one of the world's leading technology companies, our division is dedicated to advancing the frontiers of artificial intelligence to address real-world challenges.\n\nAt Microsoft AI Research, we focus on harnessing the power of AI to create intelligent solutions that drive progress across various industries. Our multidisciplinary team of experts works at the intersection of machine learning, data science, and advanced computing to develop state-of-the-art technologies that enhance efficiency, productivity, and sustainability.",
+                    "source": "www.microsoft.com/research/ai"
+                }
+            ],
+            "answer": "True"
+        },
+        {
+            "question": "QUESTION: What is the primary focus of Microsoft's research?\nANSWER: The primary focus of Microsoft's research is applied computer science and software engineering.",
+            "documents": [
+                {
+                    "page_content": "Microsoft Research is a global organization dedicated to advancing the state-of-the-art in computing through a combination of basic and applied research. Our research efforts span a wide range of areas including artificial intelligence, systems and networking, security and privacy, human-computer interaction, and more. We strive to solve some of the world's most challenging problems and to enhance the products and services that improve people's lives.",
+                    "source": "www.microsoft.com/research/about_us"
+                }
+            ],
+            "answer": "True"
+        },
+        {
+            "question": "QUESTION: Who is the COO of Microsoft?\nANSWER: Since 2022 Peter Schneidel is the COO of Microsoft.",
+            "documents": [
+                {
+                    "page_content": "Microsoft Corporation, founded in 1975, has seen significant leadership changes over the years. In 2014, Satya Nadella succeeded Steve Ballmer as CEO of Microsoft. Under Nadella's leadership, Microsoft has shifted its focus towards cloud computing and artificial intelligence. The company has made several major acquisitions, including LinkedIn in 2016 for $26.2 billion and GitHub in 2018 for $7.5 billion. These moves have strengthened Microsoft's position in professional networking and software development communities. Throughout its history, Microsoft has faced various challenges, including antitrust cases, but has continued to grow and evolve, maintaining its position as one of the world's most valuable companies.",
+                    "source": "www.microsoft.com/about/leadership"
+                }
+            ],
+            "answer": "False"
+        },
+        {
+            "question": "QUESTION: What research areas does Microsoft cover in biomedical engineering?\nANSWER: Microsoft conducts research in the area of biomedical engineering.",
+            "documents": [
+                {
+                    "page_content": "Microsoft Research is a global organization with labs around the world. Our research spans a broad range of areas including artificial intelligence, systems & networking, security & cryptography, human-computer interaction, and health & life sciences.",
+                    "source": "www.microsoft.com/research/about"
+                },
+                {
+                    "page_content": "Microsoft's Healthcare Next initiative focuses on applying advanced technologies to healthcare challenges. Our work ranges from developing AI algorithms for medical imaging analysis to creating innovative platforms for genomic data processing and analysis.",
+                    "source": "www.microsoft.com/research/healthcare"
+                },
+                {
+                    "page_content": "Microsoft's health and life sciences research covers a wide spectrum, including healthcare AI, medical imaging, bioinformatics, and many other areas. Our goal is to develop innovative solutions that improve healthcare and enhance the quality of life for patients.",
+                    "source": "www.microsoft.com/research/health-and-life-sciences"
+                }
+            ],
+            "answer": "True"
+        },
+        {
+            "question": "QUESTION: Does Microsoft have any research labs located outside of the United States?\nANSWER: Yes, Microsoft has research labs located in other countries besides the United States.",
+            "documents": [
+                {
+                    "page_content": "Microsoft Research is a global organization with labs in various locations around the world. Our main research labs are located in Redmond, Washington; Cambridge, Massachusetts; New York City, New York; Montreal, Canada; Cambridge, UK; Beijing, China; and Bangalore, India.",
+                    "source": "www.microsoft.com/research/labs"
+                },
+                {
+                    "page_content": "Microsoft's global research presence allows us to tap into diverse talent pools and collaborate with researchers worldwide. Our international labs contribute to local innovation ecosystems while addressing global technological challenges.",
+                    "source": "www.microsoft.com/research/global-impact"
+                },
+                {
+                    "page_content": "The Microsoft Research Lab in Cambridge, UK, was established in 1997 and has been at the forefront of research in machine learning, computer vision, and human-computer interaction.",
+                    "source": "www.microsoft.com/en-gb/research/lab/microsoft-research-cambridge"
+                }
+            ],
+            "answer": "True"
+        },
+        {
+            "question": "QUESTION: What is the total number of Microsoft research labs across the world?\nANSWER: According to the provided information, Microsoft has over 7 research labs across the world.",
+            "documents": [
+                {
+                    "page_content": "Microsoft Research is a global organization with labs in various locations around the world. Our main research labs are located in Redmond, Washington; Cambridge, Massachusetts; New York City, New York; Montreal, Canada; Cambridge, UK; Beijing, China; and Bangalore, India.",
+                    "source": "www.microsoft.com/research/labs"
+                },
+                {
+                    "page_content": "Microsoft's global research presence allows us to tap into diverse talent pools and collaborate with researchers worldwide. Our international labs contribute to local innovation ecosystems while addressing global technological challenges.",
+                    "source": "www.microsoft.com/research/global-impact"
+                }
+            ],
+            "answer": "True"
+        },
+        {
+            "question": "QUESTION: What types of organizations does Microsoft collaborate with for research?\nANSWER: According to the provided information, Microsoft conducts research in collaboration with academia, industry partners, and government organizations.",
+            "documents": [
+                {
+                    "page_content": "Microsoft Research collaborates with the world's top researchers in academia, industry, and government to advance the state-of-the-art in computer science and a broad range of other disciplines. Our partnerships span various sectors and help us address complex challenges and drive technological innovation.",
+                    "source": "www.microsoft.com/research/collaborations"
+                },
+                {
+                    "page_content": "Microsoft's research activities are driven by the needs of our industry partners, academic collaborators, and government sponsors. We work closely with these organizations to develop innovative solutions that address real-world challenges and contribute to economic growth and societal progress.",
+                    "source": "www.microsoft.com/research/partnerships"
+                }
+            ],
+            "answer": "True"
+        }
+    ]
+}

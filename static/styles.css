@@ -1,0 +1,201 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    background-color: #16a085;
+}
+
+/* Container for the whole content. Used for max width. */
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.container.double-width {
+    max-width: 2000px;
+}
+
+.container > div {
+    margin: 0 auto;
+}
+
+/* Title */
+.title {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px;
+}
+
+.title.no-shadow {
+    box-shadow: none;
+}
+
+.title p, .title h1 {
+    text-shadow: rgba(0, 0, 0, 0.2) 1px 2px;
+}
+
+.title > h1 {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.title > p {
+    margin-top: 5px;
+}
+
+/* Container for the conversation. */
+#conversation-container {
+    width: calc(100% - 20px);
+    overflow-y: auto; /* Enable vertical scrollbar if content overflows */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Move conversation content to the bottom */
+#conversation-container > :first-child {
+    margin-top: auto;
+}
+
+#conversation-container > :last-child {
+    margin-bottom: 90px;
+}
+
+.conversation-right, .conversation-left {
+    p {
+        margin: 0;
+        font-size: 18px;
+        text-align: start;
+    }
+
+    border-radius: 1.5em;
+    padding: 10px 20px;
+    margin: 5px 0;
+}
+
+.conversation-right {
+    align-self: flex-end;
+    background-color: #34495e;
+    margin-left: min(100px, 5%);
+}
+
+.conversation-left {
+    align-self: flex-start;
+    background-color: #ecf0f1;
+    color: black;
+    margin-right: min(100px, 5%);
+}
+
+/* Source decks attached to responses */
+.sources {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.source {
+    background-color: #32597f;
+    padding: 10px 20px;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.source p {
+    color: white;
+    margin: 0;
+}
+
+.source-date {
+    color: #7f8c8d;
+    font-size: 10px;
+}
+
+/* Message box to write new messages */
+#message {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 80px);
+    max-width: 700px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    border-radius: 1.5em;
+
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#message input {
+    height: 23px;
+    flex-grow: 1;
+    font-size: 18px;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#message button {
+    padding: 8px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+#log-container {
+    background-color: #2c3e50;
+    border-radius: 10px;
+    overflow-y: auto;
+    flex-grow: 1;
+    color: #ecf0f1;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.log-entry {
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.log-name {
+    color: #3498db;
+}
+
+.log-info {
+    color: #2ecc71;
+}
+
+.log-warning {
+    color: #f39c12;
+}
+
+.log-error {
+    color: #e74c3c;
+}
+
+.log-critical {
+    color: #c0392b;
+    font-weight: bold;
+}

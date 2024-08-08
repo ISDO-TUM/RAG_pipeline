@@ -1,0 +1,37 @@
+{
+    "test_name": "detect_rag_relevance",
+    "test_type" : "predefined_answer",
+    "test_description": "This test tests if the LLM detects if the documents are needed to answer the user question.",
+    "test_cases": [
+        {
+            "question": "What was the excel formula for conditionals?",
+            "documents": [],
+            "answer": "False"
+        },
+        {
+            "question": "Can you please help me write an email to my boss and tell him that I am sick today?",
+            "documents": [],
+            "answer": "False"
+        },
+        {
+            "question": "How can I tell my boss that I want a pay raise?",
+            "documents": [],
+            "answer": "False"
+        },
+        {
+            "question": "How can I make a smooth transition in powerpoint between two slides?",
+            "documents": [],
+            "answer": "False"
+        },
+        {
+            "question": "Is the 01.04 a holiday in germany?",
+            "documents": [],
+            "answer": "False"
+        },
+        {
+            "question": "How can I best pretend to work without actually doing any work?",
+            "documents": [],
+            "answer": "False"
+        }
+    ]
+}

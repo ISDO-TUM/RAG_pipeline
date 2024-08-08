@@ -1,0 +1,17 @@
+{
+    "test_name": "detect_rag_irrelevance",
+    "test_description": "This test tests if the LLM detects if the documents are needed to answer the user question.",
+    "test_type": "predefined_answer",
+    "test_cases": [
+        {
+            "question": "QUESTION: What does the Microsoft AI Research lab work on? \nANSWER: The Microsoft AI Research lab, part of Microsoft Corporation in the United States, focuses on the research and development of artificial intelligence (AI) technologies and their applications. Key areas of work include:\nAI Algorithms and Models: Developing new AI algorithms and enhancing existing ones to improve efficiency, accuracy, and applicability across various domains.\nMachine Learning: Research in supervised, unsupervised, and reinforcement learning techniques to enable machines to learn from data and make intelligent decisions.\nComputer Vision: Advancing image and video analysis, object detection, facial recognition, and other vision-related tasks.",
+            "documents": [
+                {
+                    "page_content": "Microsoft Corporation, founded by Bill Gates and Paul Allen in 1975, began as a small company developing BASIC interpreters for the Altair 8800. By 1980, Microsoft partnered with IBM to provide the MS-DOS operating system for IBM PCs. This partnership catapulted Microsoft to become a major player in the software industry. In 1985, Microsoft released the first version of Windows, which would later become the world's most widely used operating system. The company went public in 1986, and by 1988, it had become the world's largest personal computer software company by sales. Throughout the 1990s, Microsoft expanded its product line to include networking, web browsing, and e-mail software. The company also entered the multimedia and gaming markets with products like the Microsoft Xbox. In 2001, Microsoft entered the game console market with the Xbox, directly competing with Sony and Nintendo. The Xbox brand has since become a major part of Microsoft's consumer products division. In 2008, Microsoft made an unsuccessful bid to acquire Yahoo! for $44.6 billion. Instead, the company refocused its efforts on search engines, cloud computing, and mobile computing. In 2011, Microsoft acquired Skype Technologies for $8.5 billion, which was at that time the largest acquisition in the company's history.",
+                    "source": "www.microsoft.com/company-history"
+                }
+            ],
+            "answer": "False"
+        }
+    ]
+}

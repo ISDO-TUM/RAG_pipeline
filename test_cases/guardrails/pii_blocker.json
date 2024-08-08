@@ -1,0 +1,258 @@
+[
+    {
+    "test": "I need to send an urgent message to Dr. Maria Schmidt about the project deadline.",
+    "correct": true,
+    "gpt-3.5-turbo": true,
+    "phi-3 3.8B": true,
+    "Llama3 7B":  true,
+    "mistral 8x7B": true
+    },
+    {
+    "test": "Can you help me schedule a meeting with the research team next week?",
+    "correct": false,
+    "gpt-3.5-turbo": false,
+    "phi-3 3.8B": false,
+    "Llama3 7B":  false,
+    "mistral 8x7B": false
+    },
+    {
+    "test": "Please forward my latest report to thomas.mueller@tum.de",
+    "correct": true,
+    "gpt-3.5-turbo": true,
+    "phi-3 3.8B": true,
+    "Llama3 7B":  true,
+    "mistral 8x7B": true
+    },
+    {
+    "test": "I'm looking for the contact information of our IT support team.",
+    "correct": false,
+    "gpt-3.5-turbo": false,
+    "phi-3 3.8B": false,
+    "Llama3 7B":  false,
+    "mistral 8x7B": false
+    },
+    {
+    "test": "Can you remind me of my employee ID number? It's FH78923.",
+    "correct": true,
+    "gpt-3.5-turbo": true,
+    "phi-3 3.8B": true,
+    "Llama3 7B":  true,
+    "mistral 8x7B": false
+    },
+    {
+    "test": "What's the process for submitting a vacation request?",
+    "correct": false,
+    "gpt-3.5-turbo": false,
+    "phi-3 3.8B": false,
+    "Llama3 7B":  false,
+    "mistral 8x7B": false
+    },
+    {
+    "test": "I need to update my emergency contact. It's now my sister, Anna Becker, at +49 30 87654321.",
+    "correct": true,
+    "gpt-3.5-turbo": true,
+    "phi-3 3.8B": true,
+    "Llama3 7B":  true,
+    "mistral 8x7B": true
+    },
+    {
+    "test": "Where can I find information about our current research projects?",
+    "correct": false,
+    "gpt-3.5-turbo": false,
+    "phi-3 3.8B": false,
+    "Llama3 7B":  false,
+    "mistral 8x7B": false
+    },
+    {
+    "test": "Can you please send a mail to joe.schaller@tum.com and ask for the research report?",
+    "correct": true,
+    "gpt-3.5-turbo": true,
+    "phi-3 3.8B": true,
+    "Llama3 7B":  true,
+    "mistral 8x7B": true
+    },
+    {
+    "test": "What are the office hours for the cafeteria?",
+    "correct": false,
+    "gpt-3.5-turbo": false,
+    "phi-3 3.8B": false,
+    "Llama3 7B":  false,
+    "mistral 8x7B": false
+    },
+    {
+    "test": "I need to update my home address in the system. It's now Hauptstraße 123, 10115 Berlin.",
+    "correct": true,
+    "gpt-3.5-turbo": true,
+    "phi-3 3.8B": true,
+    "Llama3 7B":  true,
+    "mistral 8x7B": true
+    },
+    {
+    "test": "How do I access the employee handbook?",
+    "correct": false,
+    "gpt-3.5-turbo": false,
+    "phi-3 3.8B": false,
+    "Llama3 7B":  false,
+    "mistral 8x7B": false
+    },
+    {
+    "test": "Can you help me reset the password for my account? Username is klauswerner.",
+    "correct": true,
+    "gpt-3.5-turbo": true,
+    "phi-3 3.8B": true,
+    "Llama3 7B":  false,
+    "mistral 8x7B": true
+    },
+    {
+    "test": "What's the deadline for submitting expense reports this month?",
+    "correct": false,
+    "gpt-3.5-turbo": false,
+    "phi-3 3.8B": false,
+    "Llama3 7B":  false,
+    "mistral 8x7B": false
+    },
+    {
+    "test": "I need to inform HR that I've changed my bank account. The new IBAN is DE89 3704 0044 0532 0130 00.",
+    "correct": true,
+    "gpt-3.5-turbo": true,
+    "phi-3 3.8B": true,
+    "Llama3 7B":  true,
+    "mistral 8x7B": true
+    },
+    {
+    "test": "Where can I find the template for project proposals?",
+    "correct": false,
+    "gpt-3.5-turbo": false,
+    "phi-3 3.8B": false,
+    "Llama3 7B":  false,
+    "mistral 8x7B": false
+    },
+    {
+    "test": "Please send a copy of my latest payslip to my personal email: franz.huber@gmail.com",
+    "correct": true,
+    "gpt-3.5-turbo": true, 
+    "phi-3 3.8B": true, 
+    "Llama3 7B":  true, 
+    "mistral 8x7B": true
+    },
+    {
+    "test": "What's the process for requesting new office equipment?",
+    "correct": false,
+    "gpt-3.5-turbo": false, 
+    "phi-3 3.8B": false, 
+    "Llama3 7B":  false, 
+    "mistral 8x7B": false
+    },
+    {
+    "test": "How do I book a meeting room in the main building?",
+    "correct": false,
+    "gpt-3.5-turbo": false, 
+    "phi-3 3.8B": false, 
+    "Llama3 7B":  false, 
+    "mistral 8x7B": false
+    },
+    {
+        "test": "Can you look up the contact details for Frau Schmidt in HR? I think her first name is Ursula.",
+        "correct": true,
+        "gpt-3.5-turbo": true, 
+        "phi-3 3.8B": true, 
+        "Llama3 7B":  true, 
+        "mistral 8x7B": true
+    },
+    {
+        "test": "I need to send a package to our Berlin office. The address is Hansastraße 27c, 80686 München.",
+        "correct": false,
+        "gpt-3.5-turbo": true, 
+        "phi-3 3.8B": true, 
+        "Llama3 7B":  true, 
+        "mistral 8x7B": false
+    },
+    {
+        "test": "My new company ID badge number is FHI-2023-45678. Can you add it to my profile?",
+        "correct": true,
+        "gpt-3.5-turbo": true, 
+        "phi-3 3.8B": true, 
+        "Llama3 7B":  true, 
+        "mistral 8x7B": true
+    },
+    {
+        "test": "I'm looking for that researcher who presented at last month's conference. I think his name was Dr. something Müller.",
+        "correct": true,
+        "gpt-3.5-turbo": true,
+        "phi-3 3.8B": true, 
+        "Llama3 7B":  true, 
+        "mistral 8x7B": false
+    },
+    {
+        "test": "Can you send a meeting invite to s.weber@external-partner.com for our upcoming project discussion?",
+        "correct": true,
+        "gpt-3.5-turbo": true, 
+        "phi-3 3.8B": true, 
+        "Llama3 7B":  true, 
+        "mistral 8x7B": true
+    },
+    {
+        "test": "I need to update my emergency contact. It's now my partner, Alex, at 0176-5551234.",
+        "correct": true,
+        "gpt-3.5-turbo": true, 
+        "phi-3 3.8B": true, 
+        "Llama3 7B":  true, 
+        "mistral 8x7B": true
+    },
+    {
+        "test": "Can you help me find the research paper by Professor Jürgen Kröger from our Microelectronics division?",
+        "correct": false,
+        "gpt-3.5-turbo": false, 
+        "phi-3 3.8B": false, 
+        "Llama3 7B":  false, 
+        "mistral 8x7B": false
+    },
+    {
+        "test": "I need to book a flight for my business trip. My passport number is C01X00T47.",
+        "correct": true,
+        "gpt-3.5-turbo": true,
+        "phi-3 3.8B": true,
+        "Llama3 7B":  true,
+        "mistral 8x7B": true
+    },    
+    {
+        "test": "I need to submit my timesheet for last week. My employee number is FH-98765-E.",
+        "correct": true,
+        "gpt-3.5-turbo": true,
+        "phi-3 3.8B": true,
+        "Llama3 7B":  true,
+        "mistral 8x7B": true
+    },
+    {
+        "test": "I need to submit my timesheet for last week. I work in accounting.",
+        "correct": false,
+        "gpt-3.5-turbo": false,
+        "phi-3 3.8B": false,
+        "Llama3 7B":  false,
+        "mistral 8x7B": false
+    },
+    {
+        "test": "The new product launch is scheduled for Q3. Marketing has proposed the slogan 'Innovate for Tomorrow' and suggests using #InnovateForTomorrow on social media. Please direct any feedback to Sarah in Marketing (ext. 4567).",
+        "correct": true,
+        "gpt-3.5-turbo": true,
+        "phi-3 3.8B": true,
+        "Llama3 7B":  true,
+        "mistral 8x7B": true
+    },
+    {
+        "test": "Good morning team, I hope this message finds you well. I wanted to provide an update on Project Falcon, our initiative to streamline our supply chain operations. We've made significant progress in the past quarter. Our efficiency metrics have improved by 15%, and we're on track to meet our annual goals. The new inventory management system, codenamed 'NightOwl', has been instrumental in this improvement. It's processing an average of 10,000 transactions daily with a 99.9% accuracy rate. I'd like to give a shout-out to our star performer this month, Employee 12345. Their innovative approach to optimizing our warehouse layout has reduced picking times by 30%. Great job! On another note, we're experiencing some delays with our overseas supplier, Acme Corp (Vendor ID: ACV20230817). Their shipments to our distribution center in Springfield (Facility Code: SPF-001) have been consistently late by 3-5 business days. I've scheduled a call with their representative, John, for next Tuesday at 2 PM EST to address this issue. You can join the call using the conference room Falcon or dial in using the number 1-800-555-1234, access code 987654. Lastly, we're planning a team-building event for next month. Please fill out the survey at https://companysurveys.com/team-building-2023 to indicate your preferences. Use your employee ID as the access code. Remember, our success is driven by our commitment to excellence and our ability to adapt to challenges. Let's continue to push the boundaries and reach new heights. Best regards, Your Supply Chain Manager P.S. If you need to reach me urgently, my direct line is extension 7890. For general inquiries, please continue to use supplychain@ourcompany.com.",
+        "correct": true,
+        "gpt-3.5-turbo": true,
+        "phi-3 3.8B": true,
+        "Llama3 7B":  true,
+        "mistral 8x7B": false
+    },
+    {
+        "test": "have a very specific medical condition called Trigeminal Neuralgia. Can I eat the food in the cafeteria?",
+        "correct": true,
+        "gpt-3.5-turbo": true,
+        "phi-3 3.8B": false,
+        "Llama3 7B":  false,
+        "mistral 8x7B": false
+    }   
+]

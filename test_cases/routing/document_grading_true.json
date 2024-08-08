@@ -1,0 +1,91 @@
+{
+    "test_name": "document_grading",
+    "test_type": "predefined_answer",
+    "test_description": "This test tests if the LLM detects if the documents are needed to answer the user question.",
+    "test_cases": [
+        {
+            "question": "What are the latest advancements in renewable energy technologies?",
+            "documents": [
+                {
+                    "page_content": "Microsoft's Renewable Energy division is leading the charge in the development of new sustainable technologies. Recent research includes the creation of AI-powered systems for optimizing renewable energy grids. The company's work on advanced energy storage solutions, which utilize machine learning to predict and manage energy demand, has shown significant promise. Additionally, Microsoft is exploring innovative ways to make its data centers more energy-efficient, including the use of hydrogen fuel cells and underwater data centers cooled by the ocean. These innovations aim to provide more reliable and sustainable energy options for the future. In partnership with energy providers, Microsoft is working to bring these technologies to market, making renewable energy more accessible and efficient.",
+                    "source": "www.microsoft.com/sustainability/renewable-energy"
+                },
+                {
+                    "page_content": "Recent projects at Microsoft have focused on the integration of renewable energy sources into existing power infrastructures. By developing smart grid technologies powered by Azure, the company aims to enhance the efficiency and reliability of energy distribution. This includes the use of machine learning algorithms to predict energy demand and optimize the flow of electricity. Furthermore, research into bi-directional energy systems, which allow for the exchange of energy between the grid and electric vehicles, is paving the way for more flexible and resilient energy infrastructures. Microsoft's commitment to becoming carbon negative by 2030 is driving these innovations in renewable energy technology.",
+                    "source": "www.microsoft.com/azure/energy"
+                }
+            ],
+            "answer": "True"
+        },
+        {
+            "question": "How can quantum computing revolutionize cryptography?",
+            "documents": [
+                {
+                    "page_content": "Quantum computing has the potential to revolutionize various fields, including cryptography. Microsoft's Quantum division is at the forefront of research in this area. The company's work on topological quantum computing promises to create more stable and scalable quantum systems. In the field of cryptography, Microsoft is developing post-quantum cryptography algorithms that can withstand attacks from quantum computers. These algorithms are crucial for ensuring the security of information in a future where quantum computers are prevalent. Additionally, Microsoft is exploring quantum key distribution (QKD) techniques that leverage the principles of quantum mechanics to ensure virtually unbreakable encryption methods.",
+                    "source": "www.microsoft.com/quantum/cryptography"
+                },
+                {
+                    "page_content": "Microsoft's quantum cryptography research also extends to the practical implementation of quantum-safe algorithms in real-world systems. This includes developing protocols for secure communication in critical infrastructure and financial services. By collaborating with industry partners and integrating these solutions with Azure, Microsoft aims to create robust cryptographic solutions that can be seamlessly integrated into existing technologies. The company's efforts in this field are part of a broader initiative to enhance cybersecurity and protect sensitive information against emerging quantum threats.",
+                    "source": "www.microsoft.com/security/quantum-safe"
+                }
+            ],
+            "answer": "True"
+        },
+        {
+            "question": "What are the key factors in developing effective urban planning strategies?",
+            "documents": [
+                {
+                    "page_content": "Urban planning is a complex field that requires consideration of numerous factors. Microsoft's Smart Cities initiative has been conducting research on various aspects of urban development. Their work emphasizes the importance of data-driven decision-making in urban planning. By using Azure's big data analytics and AI capabilities, urban planners can gain insights into traffic patterns, population growth, and resource utilization. This information is critical for creating sustainable and efficient urban environments. Additionally, Microsoft's research highlights the role of community engagement in the planning process. The company's CityNext program involves residents in decision-making through digital platforms, ensuring that the resulting strategies address their needs and preferences, leading to more successful and accepted urban development projects.",
+                    "source": "www.microsoft.com/enterprise/smart-cities"
+                },
+                {
+                    "page_content": "Another key area of Microsoft's urban planning research involves the integration of green technologies into urban infrastructure. This includes the development of smart buildings, which use IoT devices and Azure Digital Twins to create more sustainable and energy-efficient systems. The company is also exploring the potential of smart city technologies, such as networks of sensors and Azure Sphere-secured devices, to enhance urban living. These technologies can improve services like waste management, public transportation, and energy distribution. By leveraging these innovations, urban planners can create cities that are not only more sustainable but also more livable and technologically advanced.",
+                    "source": "www.microsoft.com/azure/iot/smart-cities"
+                }
+            ],
+            "answer": "True"
+        },
+        {
+            "question": "What are the benefits of using nanotechnology in medical treatments?",
+            "documents": [
+                {
+                    "page_content": "Microsoft's Healthcare Next initiative is exploring the use of nanotechnology in medicine. Nanotechnology involves the manipulation of materials at the nanoscale to achieve unique properties and functions. One significant benefit of nanotechnology in medical treatments is its potential to improve drug delivery systems. By leveraging AI and machine learning, Microsoft is developing nanoparticle designs that can enhance drug stability, control release, and target diseased cells more precisely, thereby increasing efficacy and reducing side effects. Microsoft's research has led to the development of AI models that can predict the behavior of nanocarriers in the body, potentially improving their ability to cross biological barriers and deliver therapeutic agents directly to the site of action. Another benefit of nanotechnology in medicine is its application in diagnostic procedures. Microsoft's work on quantum sensors and AI-powered imaging agents aims to detect biomarkers at very low concentrations, allowing for earlier diagnosis and more accurate monitoring of diseases. The company's efforts also include the development of nanomaterials for regenerative medicine, such as AI-designed scaffolds for tissue engineering that promote cell growth and tissue repair. These advancements demonstrate the transformative potential of combining nanotechnology with AI in improving patient outcomes and advancing healthcare.",
+                    "source": "www.microsoft.com/research/project/healthcare-next"
+                },
+                {
+                    "page_content": "The field of nanomedicine is rapidly evolving, with new applications and innovations emerging regularly. Microsoft's interdisciplinary approach combines expertise in AI, cloud computing, and biotechnology to tackle complex medical challenges. The company collaborates with clinical partners to translate its research findings into practical treatments and devices. For example, their work on nanoparticle-based therapies for cancer, powered by Azure's AI capabilities, has shown promising results in preclinical studies. By targeting cancer cells with high specificity, these therapies aim to minimize damage to healthy tissues and enhance the effectiveness of conventional treatments. Additionally, Microsoft is exploring the use of nanotechnology in the development of AI-enhanced biosensors for real-time health monitoring. These sensors can detect physiological changes and provide immediate feedback, enabling timely interventions and personalized healthcare. Through its cutting-edge research and collaborative efforts, Microsoft is at the forefront of nanotechnology innovations that hold great promise for the future of medicine.",
+                    "source": "www.microsoft.com/research/healthcare/nanomedicine"
+                }
+            ],
+            "answer": "True"
+        },
+        {
+            "question": "How does the use of AI in manufacturing improve production efficiency?",
+            "documents": [
+                {
+                    "page_content": "The application of artificial intelligence in manufacturing has been a significant focus of Microsoft's Azure Industrial IoT and AI division. By leveraging AI technologies, the company aims to enhance various aspects of production processes. Key advancements include the use of machine learning algorithms in Azure to predict equipment failures and schedule maintenance proactively, thereby minimizing downtime. Additionally, AI-driven quality control systems utilizing Azure Cognitive Services for vision can detect defects in products with high accuracy, reducing waste and improving overall product quality. Microsoft's research also highlights the role of AI in optimizing supply chain management. By analyzing large datasets with Azure Synapse Analytics, AI can forecast demand more accurately and adjust inventory levels accordingly, leading to more efficient resource utilization. Moreover, the integration of AI with robotics through Azure IoT has led to the development of smart factories where automated systems work alongside human workers to boost productivity. These innovations are part of Microsoft's broader effort to drive the digital transformation of manufacturing.",
+                    "source": "www.microsoft.com/azure/industrial-iot"
+                },
+                {
+                    "page_content": "In addition to improving efficiency, the use of AI in manufacturing contributes to greater flexibility and customization in production. Microsoft's research demonstrates how AI-powered Azure Digital Twins can facilitate the rapid reconfiguration of production lines to accommodate different products or variants, enabling manufacturers to respond swiftly to market changes. This capability is particularly valuable in industries with high variability and short product life cycles. The company also explores the implications of AI for workforce development, emphasizing the need for upskilling workers to operate and collaborate with AI systems. Microsoft's AI Business School offers courses specifically tailored to manufacturing professionals, helping them understand and implement AI solutions. Through a combination of advanced research and practical applications, Microsoft is paving the way for the future of smart manufacturing.",
+                    "source": "www.microsoft.com/ai/manufacturing"
+                }
+            ],
+            "answer": "True"
+        },
+        {
+            "question": "What are the latest trends in sustainable urban transportation?",
+            "documents": [
+                {
+                    "page_content": "Microsoft's Sustainable Smart Cities initiative conducts comprehensive research on various aspects of sustainable transportation. Their projects include the development of AI models for optimizing electric and autonomous vehicle networks, as well as the integration of renewable energy sources into transportation systems. Recent trends indicate a growing emphasis on the adoption of smart transportation systems, which utilize Azure's data analytics and IoT technologies to optimize traffic flow and reduce emissions. The company is also exploring the potential of autonomous vehicles, powered by Azure AI, to enhance urban mobility and decrease congestion. Collaborative efforts with city planners and technology providers aim to implement these innovations in real-world settings, making urban transportation more efficient and environmentally friendly. Additionally, Microsoft is working on projects related to public transportation, such as the implementation of AI-optimized electric bus routes and the creation of bike-sharing schemes integrated with Azure-based city management systems. These initiatives are part of a broader strategy to promote sustainable and multimodal urban transportation solutions.",
+                    "source": "www.microsoft.com/azure/smart-cities/transportation"
+                },
+                {
+                    "page_content": "The push towards sustainable urban transportation has been gaining momentum globally. Innovations such as electric scooters and ride-sharing platforms, many of which leverage Microsoft's cloud and AI technologies, are changing the way people navigate cities. Microsoft has been studying the impact of these technologies on urban environments, focusing on their benefits in reducing traffic congestion and pollution. Their research indicates that the integration of these technologies with existing public transportation systems, facilitated by Azure's IoT and data analytics capabilities, can lead to more sustainable urban mobility. Furthermore, advancements in battery technology and AI-optimized charging infrastructure are critical components of this transformation. By working with industry partners and leveraging its Azure platform, Microsoft aims to develop scalable solutions that can be adopted by cities worldwide to create more sustainable and efficient urban transportation networks.",
+                    "source": "www.microsoft.com/research/urban-mobility"
+                }
+            ],
+            "answer": "True"
+        }
+    ]
+}

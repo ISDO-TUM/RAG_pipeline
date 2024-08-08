@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logs - LLM enhanced with RAG</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+<div class="container double-width">
+    <div class="title no-shadow">
+        <h1>Capstone - Logs</h1>
+        <p>LLM enhanced with RAG</p>
+    </div>
+    <div id="log-container">
+        {% for log in logs %}
+        <div>
+            {% if log.name == '[GENERATION]' %}
+            <span style="color: #2ecc71;">{{ log.name }}</span>
+            {% elif log.name == '[RETRIEVAL]' %}
+            <span style="color: #b070f0;">{{ log.name }}</span>
+            {% elif log.name == '[ROUTING]' %}
+            <span style="color: #74caf5;">{{ log.name }}</span>
+            {% elif log.name == '[GUARDRAIL]' %}
+            <span style="color: #f8a155;">{{ log.name }}</span>
+            {% else %}
+            <span>{{ log.name }}</span>
+            {% endif %}
+            - {{ log.message }}<br><br>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</body>
+</html>

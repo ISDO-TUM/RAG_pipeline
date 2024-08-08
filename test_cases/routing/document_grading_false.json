@@ -1,0 +1,97 @@
+{
+    "test_name": "document_grading",
+    "test_type": "predefined_answer",
+    "test_description": "This test tests if the LLM detects if the documents are needed to answer the user question.",
+    "test_cases": [
+        {
+            "question": "What are the general principles behind effective research methodologies?",
+            "documents": [
+                {
+                    "page_content": "Microsoft Corporation is a multinational technology company that develops, manufactures, and sells computer software, consumer electronics, and personal computers. Our mission is to empower every person and every organization on the planet to achieve more. We strive to create local opportunity, growth, and impact in every country around the world.",
+                    "source": "www.microsoft.com/about"
+                }
+            ],
+            "answer": "False"
+        },
+        {
+            "question": "How can machine learning be applied to healthcare?",
+            "documents": [
+                {
+                    "page_content": "Microsoft's AI and Research division is dedicated to pushing the boundaries of artificial intelligence to solve real-world problems. Our team combines expertise in machine learning, data science, and cloud computing. Over the years, we've developed numerous AI models and algorithms that have been integrated into various Microsoft products and services, including Azure, Office 365, and Xbox. By leveraging big data and advanced analytics, we aim to enhance productivity, improve user experiences, and enable smarter decision-making. One of our key initiatives involves the use of AI in cybersecurity to detect and prevent threats more effectively. Additionally, our research extends to natural language processing, which has applications in products like Microsoft Translator and Cortana.",
+                    "source": "www.microsoft.com/research/ai"
+                },
+                {
+                    "page_content": "Microsoft Research has published thousands of papers in top-tier academic journals and conferences. These publications cover a wide range of topics in computer science, from quantum computing to human-computer interaction. We actively collaborate with universities and research institutions worldwide to advance the field of computer science and foster innovation. Our state-of-the-art research facilities, including those in Redmond, Cambridge, and Beijing, provide cutting-edge infrastructure for our scientists and engineers. Furthermore, we have established partnerships with industry leaders to translate our research into practical applications, driving technological advancements across various sectors.",
+                    "source": "www.microsoft.com/research/publications"
+                }
+            ],
+            "answer": "False"
+        },
+        {
+            "question": "What does the HoloLens division at Microsoft focus on?",
+            "documents": [
+                {
+                    "page_content": "Microsoft's AI and Research division is dedicated to pushing the boundaries of artificial intelligence to solve real-world problems. Our team combines expertise in machine learning, data science, and cloud computing. Over the years, we've developed numerous AI models and algorithms that have been integrated into various Microsoft products and services, including Azure, Office 365, and Xbox. By leveraging big data and advanced analytics, we aim to enhance productivity, improve user experiences, and enable smarter decision-making. One of our key initiatives involves the use of AI in cybersecurity to detect and prevent threats more effectively. Additionally, our research extends to natural language processing, which has applications in products like Microsoft Translator and Cortana.",
+                    "source": "www.microsoft.com/research/ai"
+                }
+            ],
+            "answer": "False"
+        },
+        {
+            "question": "What is the role of big data in modern marketing strategies?",
+            "documents": [
+                {
+                    "page_content": "Microsoft's Azure Data and AI platform provides powerful tools for big data analytics across various sectors, including marketing. By analyzing vast amounts of consumer data, businesses can gain valuable insights into customer behavior and preferences. This information is crucial for developing targeted marketing campaigns, improving product offerings, and enhancing customer experiences. Microsoft's advanced data mining techniques and machine learning algorithms, available through Azure Machine Learning, enable businesses to make data-driven decisions and optimize their marketing strategies. The company's partnerships with major enterprises ensure that these technologies are applied effectively in real-world scenarios.",
+                    "source": "www.microsoft.com/azure/data-ai"
+                },
+                {
+                    "page_content": "In addition to its big data analytics capabilities, Microsoft is at the forefront of applying AI and machine learning to marketing challenges. Technologies like Azure Cognitive Services enable automated customer segmentation, sentiment analysis, and personalized content delivery. By leveraging AI, companies can create more engaging and relevant marketing experiences for their audiences. Microsoft is also addressing the ethical implications of using big data in marketing through its responsible AI principles. Ensuring data privacy and transparency is a key focus, aimed at maintaining consumer trust and compliance with global regulations. Microsoft's comprehensive approach to big data in marketing demonstrates both the potential and the responsibilities associated with these powerful technologies.",
+                    "source": "www.microsoft.com/azure/ai-services"
+                }
+            ],
+            "answer": "False"
+        },
+        {
+            "question": "What are the benefits of implementing a circular economy model?",
+            "documents": [
+                {
+                    "page_content": "Microsoft is committed to becoming a carbon negative, water positive, and zero waste company by 2030. As part of this initiative, we're embracing circular economy principles across our operations. This includes designing our products for longevity and recyclability, implementing take-back programs for devices like Surface laptops and Xbox consoles, and minimizing resource consumption in our data centers. Our efforts in developing more sustainable packaging and exploring new recycling technologies for electronic waste are prime examples of our commitment to sustainability. By promoting a circular economy, Microsoft aims to reduce its environmental impact and inspire industry-wide change.",
+                    "source": "www.microsoft.com/sustainability/circular-economy"
+                },
+                {
+                    "page_content": "Beyond our own operations, Microsoft is researching the broader economic and societal impacts of transitioning to a circular economy. Our studies suggest that this model can lead to significant cost savings for businesses and create new job opportunities in the green economy. Furthermore, our research highlights the environmental benefits of a circular economy, such as reduced carbon emissions and decreased pollution. Through our AI for Earth program, we're supporting organizations that use AI and cloud computing to address environmental challenges. By fostering collaboration between industry, government, and non-profit sectors, Microsoft aims to accelerate the adoption of circular economy practices and contribute to a more sustainable future.",
+                    "source": "www.microsoft.com/ai-for-earth"
+                }
+            ],
+            "answer": "False"
+        },
+        {
+            "question": "What are the specific benefits of implementing blockchain technology in supply chain management?",
+            "documents": [
+                {
+                    "page_content": "Microsoft's Azure Blockchain Services offers powerful tools for implementing blockchain solutions across various industries, including supply chain management. Blockchain technology provides a decentralized and immutable ledger that can enhance the traceability and transparency of supply chains. By leveraging Azure Blockchain, companies can create a tamper-proof record of product origins, movements, and handling, which helps prevent fraud and counterfeiting. This increased transparency builds trust among supply chain participants. Moreover, the use of smart contracts on the blockchain can automate various processes, such as payment settlements and compliance checks, improving efficiency and reducing administrative overhead. Microsoft is collaborating with industry leaders to implement blockchain solutions in real-world supply chains, demonstrating the practical benefits and scalability of this technology.",
+                    "source": "www.microsoft.com/azure/blockchain"
+                },
+                {
+                    "page_content": "In addition to enhancing transparency and security, blockchain technology integrated with Azure IoT can significantly improve supply chain efficiency through real-time tracking and monitoring of goods. Microsoft's research includes developing blockchain-based systems that incorporate IoT devices for continuous monitoring of environmental conditions during transit. These systems can provide instant alerts if conditions deviate from specified ranges, allowing for timely interventions to prevent spoilage or damage. By combining blockchain with Azure's cloud and edge computing capabilities, supply chain managers can achieve greater visibility and control over their operations, leading to better decision-making and optimized resource utilization. Microsoft's interdisciplinary approach, leveraging expertise in blockchain, IoT, and AI, creates comprehensive solutions tailored to various industries' needs. Through its Microsoft for Startups program and industry partnerships, the company is working to advance the adoption of blockchain technology and address implementation challenges in supply chain management.",
+                    "source": "www.microsoft.com/azure/iot"
+                }
+            ],
+            "answer": "False"
+        },
+        {
+            "question": "What are the latest advancements in cloud computing technologies?",
+            "documents": [
+                {
+                    "page_content": "Microsoft Azure is at the forefront of cloud computing innovation, continuously developing new technologies to enhance scalability, security, and performance. Recent advancements include the introduction of Azure Arc, which extends Azure services and management to any infrastructure. Microsoft's work on quantum computing through Azure Quantum is pushing the boundaries of computational power. Additionally, the company is making significant strides in edge computing with Azure Stack and Azure Sphere, enabling more efficient processing of data closer to its source. These innovations aim to provide more flexible and powerful cloud solutions for businesses of all sizes. In collaboration with industry partners, Microsoft is working to bring these cutting-edge technologies to market, making advanced cloud computing more accessible and efficient.",
+                    "source": "www.microsoft.com/azure/innovations"
+                },
+                {
+                    "page_content": "Recent projects at Microsoft have focused on integrating AI and machine learning capabilities more deeply into Azure services. This includes the development of Azure Machine Learning, which simplifies the process of building, training, and deploying machine learning models at scale. Microsoft is also advancing in the area of serverless computing with Azure Functions, allowing developers to run code without managing infrastructure. Furthermore, research into confidential computing is enhancing data security in the cloud by protecting data while in use. These advancements, coupled with Microsoft's commitment to sustainability in its data centers, are shaping the future of cloud computing to be more intelligent, efficient, and environmentally friendly.",
+                    "source": "www.microsoft.com/azure/ai-ml"
+                }
+            ],
+            "answer": "True"
+        }
+    ]
+}

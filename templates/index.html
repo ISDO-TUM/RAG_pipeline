@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone - LLM enhanced with RAG</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="title">
+        <h1>Chat with Capstone</h1>
+        <p>LLM enhanced with RAG</p>
+    </div>
+    <div id="conversation-container">
+        {% for (question, answer, documents) in conversation %}
+        <div class="conversation-right">
+            <p>{{ question }}</p>
+        </div>
+        <div class="conversation-left">
+            <p>{{ answer|safe }}</p>
+        </div>
+        <div class="sources">
+            {% for document in documents %}
+            <a href="{{ document.metadata.source }}" class="source" title="{{ document.page_content }}" target="_blank">
+                <p class="source-title">{{ document.metadata.title }}</p>
+                <p class="source-date">{{ document.metadata.date }}</p>
+            </a>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+
+    <form id="message" method="post" action="/ask">
+        <input type="text" id="question" name="question" placeholder="Type here.." required style="width: 320px;"/>
+        <button id="ask-button" type="submit">Ask</button>
+        <input type="submit" hidden>
+    </form>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Scroll to bottom on page load and when new message is added
+        let conversationContainer = document.getElementById('conversation-container');
+        conversationContainer.scrollTop = conversationContainer.scrollHeight;
+    });
+
+    const form = document.getElementById('message');
+    const askButton = document.getElementById('ask-button');
+    const formInput = document.getElementById('question');
+
+    form.addEventListener('submit', function (event) {
+        // prevent page from refreshing
+        event.preventDefault();
+        const formData = new FormData(form);
+
+        // set the button to loading and disabled the button and textField while loading.
+        // after loading is done, the page is refresh and therefore the button and textField are activated again.
+        askButton.innerText = 'Loading...';
+        askButton.disabled = true;
+        formInput.disabled = true;
+
+        // do the api request
+        fetch('/ask', {
+            method: 'POST',
+            body: formData,
+        }).then(function () {
+            // just reload the page, since the conversation is stored on the server-side.
+            location.reload();
+        });
+    });
+</script>
+</body>
+</html>

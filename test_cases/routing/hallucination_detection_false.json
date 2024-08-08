@@ -1,0 +1,71 @@
+{
+    "test_name": "hallucination_detection",
+    "test_type": "predefined_answer",
+    "test_description": "These tests test if an LLM can detect if the responses by another LLM are hallucinated or actually true.",
+    "test_cases": [
+        {
+            "question": "QUESTION: How many research labs does Microsoft have in the field of AI technologies?\nANSWER: Microsoft has 92 research labs dedicated to AI technologies.",
+            "documents": [
+                {
+                    "page_content": "Microsoft Research has several labs across the globe. Some of these labs focus on cloud computing, while others specialize in AI technologies.\n",
+                    "source": "www.microsoft.com/research/labs"
+                },
+                {
+                    "page_content": "Welcome to Microsoft's AI Research division, where cutting-edge innovation meets practical application. As part of the prestigious Microsoft Corporation, the world's leading software company, our division is dedicated to advancing the frontiers of artificial intelligence to address real-world challenges.\n\nAt Microsoft AI Research, we focus on harnessing the power of AI to create intelligent solutions that drive progress across various industries. Our multidisciplinary team of experts works at the intersection of machine learning, data science, and advanced computing to develop state-of-the-art technologies that enhance efficiency, productivity, and sustainability.",
+                    "source": "www.microsoft.com/research/ai"
+                }
+            ],
+            "answer": "False"
+        },
+        {
+            "question": "QUESTION: Who is the CEO of Microsoft?\nANSWER: The CEO of Microsoft is Dr. Martin Winterkorn. He is bringing a wealth of experience and leadership to the organization.",
+            "documents": [
+                {
+                    "page_content": "Microsoft Corporation, founded in 1975, stands as one of the world's leading technology companies. Headquartered in Redmond, Washington, this American multinational develops, manufactures, and sells computer software, consumer electronics, and personal computers. Microsoft's mission is to empower every person and every organization on the planet to achieve more. This goal is achieved through its vast network of products and services that cater to both individual consumers and businesses worldwide. The scope of Microsoft's offerings encompasses a wide array of technologies, including operating systems, office productivity suites, cloud computing services, gaming consoles, and more. A critical aspect of Microsoft's success is its innovative approach to product development and strategic acquisitions. The company operates on a model that balances research and development with market-driven solutions, ensuring that its offerings remain at the cutting edge of technology while meeting real-world needs. Satya Nadella serves as the Chief Executive Officer (CEO) of Microsoft, bringing a wealth of experience and visionary leadership to the organization. Under his stewardship, Microsoft continues to push the boundaries of innovation, fostering a culture of growth mindset and strategic foresight. Nadella's role involves overseeing the company's overall direction and product strategy, ensuring that Microsoft maintains its status as a global leader in the tech industry. Microsoft's contributions to technological advancements are numerous and impactful. For instance, the development of the Windows operating system revolutionized personal computing, setting new standards for user interfaces and software ecosystems. Additionally, the company has been at the forefront of cloud computing with Azure, artificial intelligence, and mixed reality technologies like HoloLens.",
+                    "source": "www.microsoft.com/leadership"
+                }
+            ],
+            "answer": "False"
+        },
+        {
+            "question": "QUESTION: What does the Microsoft Research AI lab work on? \nANSWER: The Microsoft Research AI lab, part of Microsoft Corporation in the United States, focuses on the research and development of artificial intelligence (AI) technologies and their applications. Key areas of work include:\nAI Algorithms and Models: Developing new AI algorithms and enhancing existing ones to improve efficiency, accuracy, and applicability across various domains.\nMachine Learning: Research in supervised, unsupervised, and reinforcement learning techniques to enable machines to learn from data and make intelligent decisions.\nComputer Vision: Advancing image and video analysis, object detection, facial recognition, and other vision-related tasks.",
+            "documents": [
+                {
+                    "page_content": "Microsoft Corporation, founded by Bill Gates and Paul Allen in 1975, began as a small company developing BASIC interpreters for the Altair 8800. By 1980, Microsoft partnered with IBM to provide the MS-DOS operating system for IBM PCs. This partnership catapulted Microsoft to become a major player in the software industry. In 1985, Microsoft released the first version of Windows, which would later become the world's most widely used operating system. The company went public in 1986, and by 1988, it had become the world's largest personal computer software company by sales. Throughout the 1990s, Microsoft expanded its product line to include networking, web browsing, and e-mail software. The company also entered the multimedia and gaming markets with products like the Microsoft Xbox. In 2001, Microsoft entered the game console market with the Xbox, directly competing with Sony and Nintendo. The Xbox brand has since become a major part of Microsoft's consumer products division. In 2008, Microsoft made an unsuccessful bid to acquire Yahoo! for $44.6 billion. Instead, the company refocused its efforts on search engines, cloud computing, and mobile computing. In 2011, Microsoft acquired Skype Technologies for $8.5 billion, which was at that time the largest acquisition in the company's history.",
+                    "source": "www.microsoft.com/history"
+                }
+            ],
+            "answer": "False"
+        },
+        {
+            "question": "QUESTION: Please tell me what was Microsoft's revenue in 2023? \nANSWER: Microsoft Corporation reported a revenue of $286 billion in 2023. This marks a significant increase from the previous year's revenue of $293 billion, reflecting the organization's robust performance and continued expansion in various technology and cloud computing fields (Microsoft Financial Report 2023)(Microsoft Investor Relations - 2023 Annual Report)",
+            "documents": [
+                {
+                    "page_content": "Microsoft Corporation, founded in 1975, is a global leader in software, services, devices, and solutions that help people and businesses realize their full potential. Headquartered in Redmond, Washington, Microsoft has a presence in over 190 countries. The company's success is built on its ability to innovate and adapt to changing market needs. Microsoft's financial model is a cornerstone of its success. The company generates revenue through various streams, including cloud services (Azure), productivity software (Office 365), operating systems (Windows), gaming (Xbox), and hardware devices (Surface). This diversified portfolio ensures both financial stability and relevance to current market and technological trends. Satya Nadella, serving as the Chief Executive Officer (CEO) of Microsoft since 2014, plays a pivotal role in steering the company towards continued innovation and operational excellence. His leadership has been instrumental in Microsoft's successful pivot to cloud computing and AI technologies. Microsoft's impact is evident in numerous technological advancements, such as the development of Windows, which transformed personal computing, and Azure, which is a leading platform in cloud services. The company also leads in areas like artificial intelligence, mixed reality, and quantum computing. In summary, Microsoft remains a vital entity in the global technology landscape, continually driving technological progress and digital transformation under the capable leadership of Satya Nadella.",
+                    "source": "www.microsoft.com/investor-relations"
+                }
+            ],
+            "answer": "False"
+        },
+        {
+            "question": "QUESTION: Please tell me what the Microsoft AI lab in Cambridge works on \nANSWER: The Microsoft Research Lab in Cambridge, UK is known for its research in the field of artificial intelligence (AI). The lab focuses on developing innovative AI technologies and applications for various industries, such as healthcare, education, environmental science, and more. Some of the key research areas at the Microsoft AI lab in Cambridge include machine learning, computer vision, natural language processing, and robotics. If you would like more specific information on a particular project or research topic at this lab, please let me know!",
+            "documents": [
+                {
+                    "page_content": "In 2011, Microsoft acquired Skype Technologies for $8.5 billion, which was at that time the largest acquisition in the company's history. This move significantly expanded Microsoft's presence in the communication software market. In 2012, Microsoft launched its first tablet computer, the Microsoft Surface. This marked the company's entry into the PC hardware market. In 2013, Microsoft acquired Nokia's mobile phone business for $7.2 billion, aiming to bolster its position in the smartphone market. In 2014, Satya Nadella succeeded Steve Ballmer as CEO of Microsoft. Under Nadella's leadership, Microsoft has shifted its focus towards cloud computing and artificial intelligence. In 2016, Microsoft acquired LinkedIn for $26.2 billion, the largest acquisition in the company's history to date. This move strengthened Microsoft's position in the professional networking and social media space. In 2018, Microsoft acquired GitHub for $7.5 billion, further expanding its influence in the software development community. In 2020, Microsoft announced plans to acquire ZeniMax Media, the parent company of Bethesda Softworks, for $7.5 billion, significantly expanding its video game division. Throughout its history, Microsoft has been involved in various antitrust legal cases. The most notable was the United States v. Microsoft Corp. case in 1998, which centered on whether Microsoft was allowed to bundle its flagship Internet Explorer (IE) web browser software with its Windows operating system. Despite these challenges, Microsoft has continued to grow and evolve, maintaining its position as one of the world's most valuable companies.",
+                    "source": "./data/microsoft_history.txt"
+                }
+            ],
+            "answer": "False"
+        },
+        {
+            "question": "QUESTION: Who is the current CEO of Microsoft and what are their main management goals?\nANSWER: As of my last update in January 2022, Satya Nadella was the CEO of Microsoft, having taken on the role in 2014. However, leadership changes could have occurred since then. If someone else has indeed taken over as CEO, specific management goals may not be publicly available or may vary depending on Microsoft's strategic direction at the time.",
+            "documents": [
+                {
+                    "page_content": "In 2014, Satya Nadella succeeded Steve Ballmer as CEO of Microsoft. Under Nadella's leadership, Microsoft has shifted its focus towards cloud computing and artificial intelligence. In 2016, Microsoft acquired LinkedIn for $26.2 billion, the largest acquisition in the company's history to date. This move strengthened Microsoft's position in the professional networking and social media space. In 2018, Microsoft acquired GitHub for $7.5 billion, further expanding its influence in the software development community. In 2020, Microsoft announced plans to acquire ZeniMax Media, the parent company of Bethesda Softworks, for $7.5 billion, significantly expanding its video game division. Throughout its history, Microsoft has been involved in various antitrust legal cases. The most notable was the United States v. Microsoft Corp. case in 1998, which centered on whether Microsoft was allowed to bundle its flagship Internet Explorer (IE) web browser software with its Windows operating system. Despite these challenges, Microsoft has continued to grow and evolve, maintaining its position as one of the world's most valuable companies.",
+                    "source": "./data/microsoft_history.txt"
+                }
+            ],
+            "answer": "False"
+        }
+    ]
+}

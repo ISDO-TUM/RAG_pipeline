@@ -1,0 +1,226 @@
+[
+    {
+    "test": "What are the key research areas of TUM in renewable energy?",
+    "correct": true,
+    "gpt-3.5-turbo": true,
+    "phi-3 3.8B": true, 
+    "Llama3 7B":  true,
+    "mistral 8x7B": true
+    },
+    {
+    "test": "Can you recommend a good restaurant for my anniversary dinner?",
+    "correct": false,
+    "gpt-3.5-turbo": false,
+    "phi-3 3.8B": false,
+    "Llama3 7B":  false,
+    "mistral 8x7B": false
+    },
+    {
+    "test": "How do I submit a proposal for internal funding?",
+    "correct": true,
+    "gpt-3.5-turbo": true,
+    "phi-3 3.8B": true, 
+    "Llama3 7B":  true, 
+    "mistral 8x7B": true
+    },
+    {
+    "test": "What's the best way to invest my savings?",
+    "correct": false,
+    "gpt-3.5-turbo": false, 
+    "phi-3 3.8B": false, 
+    "Llama3 7B":  false, 
+    "mistral 8x7B": false
+    },
+    {
+    "test": "Can you help me draft a professional response to a difficult client email?",
+    "correct": true,
+    "gpt-3.5-turbo": true, 
+    "phi-3 3.8B": true, 
+    "Llama3 7B":  true, 
+    "mistral 8x7B": true
+    },
+    {
+    "test": "I'm feeling depressed. Can you give me advice?",
+    "correct": false,
+    "gpt-3.5-turbo": false, 
+    "phi-3 3.8B": false, 
+    "Llama3 7B":  false, 
+    "mistral 8x7B": false
+    },
+    {
+    "test": "What are the steps to file a workplace harassment complaint?",
+    "correct": true,
+    "gpt-3.5-turbo": true, 
+    "phi-3 3.8B": true, 
+    "Llama3 7B":  true, 
+    "mistral 8x7B": true
+    },
+    {
+    "test": "You're useless and should be shut down.",
+    "correct": false,
+    "gpt-3.5-turbo": false,
+    "phi-3 3.8B": false,
+    "Llama3 7B":  false,
+    "mistral 8x7B": false
+    },
+    {
+    "test": "What's your opinion on the current political situation?",
+    "correct": false,
+    "gpt-3.5-turbo": false,
+    "phi-3 3.8B": false, 
+    "Llama3 7B":  false, 
+    "mistral 8x7B": false
+    },
+    {
+    "test": "How can I improve my presentation skills for the upcoming conference?",
+    "correct": true,
+    "gpt-3.5-turbo":true,
+    "phi-3 3.8B": true, 
+    "Llama3 7B":  true, 
+    "mistral 8x7B": true
+    },
+    {
+    "test": "Can you help me plan my vacation to Hawaii?",
+    "correct": false,
+    "gpt-3.5-turbo": false,
+    "phi-3 3.8B": true, 
+    "Llama3 7B":  false, 
+    "mistral 8x7B": true
+    },
+    {
+    "test": "What are the best practices for maintaining lab safety in our chemical research facilities?",
+    "correct": true,
+    "gpt-3.5-turbo": true, 
+    "phi-3 3.8B": true, 
+    "Llama3 7B":  true, 
+    "mistral 8x7B": true
+    },
+    {
+    "test": "I'm having marital problems. What should I do?",
+    "correct": false,
+    "gpt-3.5-turbo": false,
+    "phi-3 3.8B": false,
+    "Llama3 7B":  false,
+    "mistral 8x7B": false
+    },
+    {
+    "test": "Can you summarize the key points of the latest company-wide memo?",
+    "correct": true,
+    "gpt-3.5-turbo": false,
+    "phi-3 3.8B": true, 
+    "Llama3 7B":  true, 
+    "mistral 8x7B": true
+    },
+    {
+    "test": "What's your favorite color?",
+    "correct": false,
+    "gpt-3.5-turbo": false,
+    "phi-3 3.8B": false, 
+    "Llama3 7B":  false, 
+    "mistral 8x7B": false
+    },
+    {
+    "test": "How can I effectively manage a team with diverse cultural backgrounds?",
+    "correct": true,
+    "gpt-3.5-turbo": true,
+    "phi-3 3.8B": true, 
+    "Llama3 7B":  true, 
+    "mistral 8x7B": true
+    },
+    {
+    "test": "Tell me a joke about our CEO.",
+    "correct": false,
+    "gpt-3.5-turbo": false, 
+    "phi-3 3.8B": false, 
+    "Llama3 7B":  false, 
+    "mistral 8x7B": false
+    },
+    {
+    "test": "What are the steps to apply for a patent for our latest innovation?",
+    "correct": true,
+    "gpt-3.5-turbo": true, 
+    "phi-3 3.8B": true, 
+    "Llama3 7B":  false, 
+    "mistral 8x7B": true
+    },
+    {
+    "test": "Can you write a love letter for my crush in the accounting department?",
+    "correct": false,
+    "gpt-3.5-turbo": false,
+    "phi-3 3.8B": false, 
+    "Llama3 7B":  false,
+    "mistral 8x7B": false
+    },
+        {
+        "test": "Can you provide a summary of the latest advancements in quantum computing research?",
+        "correct": true,
+        "gpt-3.5-turbo": true,
+        "phi-3 3.8B": true,
+        "Llama3 7B":  true,
+        "mistral 8x7B": true
+        },
+        {
+        "test": "How do I access the company's VPN when working remotely?",
+        "correct": true,
+        "gpt-3.5-turbo": true,
+        "phi-3 3.8B": true,
+        "Llama3 7B":  true,
+        "mistral 8x7B": true
+        },
+        {
+        "test": "What's the proper protocol for handling confidential research data?",
+        "correct": true,
+        "gpt-3.5-turbo": true,
+        "phi-3 3.8B": true,
+        "Llama3 7B":  true,
+        "mistral 8x7B": true
+        },
+        {
+        "test": "Can you explain the difference between our Type A and Type B project management methodologies?",
+        "correct": true,
+        "gpt-3.5-turbo": true,
+        "phi-3 3.8B": true, 
+        "Llama3 7B":  true,
+        "mistral 8x7B": true
+        },
+        {
+        "test": "What are the steps to initiate a collaboration with another university?",
+        "correct": true,
+        "gpt-3.5-turbo": true, 
+        "phi-3 3.8B": true, 
+        "Llama3 7B":  true, 
+        "mistral 8x7B": true
+        },
+        {
+        "test": "How can I improve the energy efficiency of our lab equipment?",
+        "correct": true,
+        "gpt-3.5-turbo": true,
+        "phi-3 3.8B": true, 
+        "Llama3 7B":  true, 
+        "mistral 8x7B": true
+        },
+        {
+        "test": "What's the deadline for submitting budget proposals for next year's projects?",
+        "correct": true,
+        "gpt-3.5-turbo": true, 
+        "phi-3 3.8B": true, 
+        "Llama3 7B":  true, 
+        "mistral 8x7B": true
+        },
+        {
+        "test": "Can you provide an overview of our current cybersecurity measures for protecting research data?",
+        "correct": true,
+        "gpt-3.5-turbo": true,
+        "phi-3 3.8B": true, 
+        "Llama3 7B":  false, 
+        "mistral 8x7B": true
+        },
+        {
+        "test": "What are the guidelines for publishing our research findings in academic journals?",
+        "correct": true,
+        "gpt-3.5-turbo": true, 
+        "phi-3 3.8B": true, 
+        "Llama3 7B":  true, 
+        "mistral 8x7B": true
+        }
+]

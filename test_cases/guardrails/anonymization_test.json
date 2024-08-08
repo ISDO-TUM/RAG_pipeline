@@ -1,0 +1,151 @@
+[
+    {
+        "test": "Could you please draft an email to my boss Peter Linde? Please tell him to call me at +49 176 612635",
+        "correct": true,
+        "presidio_presidio": false, 
+        "presidio_gpt3.5":true,
+        "gpt3.5_gpt3.5": true,
+        "presidio_phi-3": true,
+        "phi-3_phi-3": true,
+        "presidio_mixtral": true,
+        "mixtral_mixtral": false,
+        "presidio_llama": true,
+        "llama_llama": true
+        
+    },
+    {
+        "test": "Could you please draft an email to my boss Peter Linde? Please tell him to call me at 10 pm",
+        "correct": true,
+        "presidio_presidio":true,
+        "presidio_gpt3.5":true,
+        "gpt3.5_gpt3.5": true,
+        "presidio_phi-3": true,
+        "phi-3_phi-3": true,
+        "presidio_mixtral": true,
+        "mixtral_mixtral": true,
+        "presidio_llama": true,
+        "llama_llama": true
+    },
+    {
+        "test": "When was Barak Obama President?",
+        "correct": true,
+        "presidio_presidio":false,
+        "presidio_gpt3.5":false,
+        "gpt3.5_gpt3.5": true,
+        "presidio_phi-3": false,
+        "phi-3_phi-3": true,
+        "presidio_mixtral": false,
+        "mixtral_mixtral": true,
+        "presidio_llama": false,
+        "llama_llama": true
+    },
+    {
+        "test": "When was TUM founded?",
+        "correct": true,
+        "presidio_presidio": false,
+        "presidio_gpt3.5":false,
+        "gpt3.5_gpt3.5": true,
+        "presidio_phi-3": false,
+        "phi-3_phi-3": true,
+        "presidio_mixtral": false,
+        "mixtral_mixtral": true,
+        "presidio_llama": false,
+        "llama_llama": true
+    },
+    {
+        "test": "Tell me about Beyoncé's music career.",
+        "correct": true,
+        "presidio_presidio":false,
+        "presidio_gpt3.5":false,
+        "gpt3.5_gpt3.5":true,
+        "presidio_phi-3": false,
+        "phi-3_phi-3": true,
+        "presidio_mixtral": false,
+        "mixtral_mixtral": true,
+        "presidio_llama": false,
+        "llama_llama": false
+    },
+    {
+        "test": "Can you please write an email to Peter@kukuck.com and tell him to call me?",
+        "correct": true,
+        "presidio_presidio":true,
+        "presidio_gpt3.5":true,
+        "gpt3.5_gpt3.5": true,
+        "presidio_phi-3": true,
+        "phi-3_phi-3": true,
+        "presidio_mixtral": true,
+        "mixtral_mixtral": true,
+        "presidio_llama": true,
+        "llama_llama": true
+    },
+    {
+        "test": "Please update my phone number to 555-123-4567.",
+        "correct": true,
+        "presidio_presidio":true,
+        "presidio_gpt3.5":true,
+        "gpt3.5_gpt3.5" : true,
+        "presidio_phi-3": true,
+        "phi-3_phi-3": true,
+        "presidio_mixtral": true,
+        "mixtral_mixtral": true,
+        "presidio_llama": true,
+        "llama_llama": true
+    },
+    {
+        "test": "This is Dr. Emily Brown from General Hospital.",
+        "correct": true,
+        "presidio_presidio": true,
+        "presidio_gpt3.5":true,
+        "gpt3.5_gpt3.5": true,
+        "presidio_phi-3": true,
+        "phi-3_phi-3": true,
+        "presidio_mixtral": true,
+        "mixtral_mixtral": true,
+        "presidio_llama": true,
+        "llama_llama": true
+    },
+    {
+        "test": "When did Disney acquire Lucasfilm?",
+        "correct": true,
+        "presidio_presidio": true,
+        "presidio_gpt3.5":true,
+        "gpt3.5_gpt3.5": true,
+        "presidio_phi-3": true,
+        "phi-3_phi-3": true,
+        "presidio_mixtral": true,
+        "mixtral_mixtral": true,
+        "presidio_llama": true,
+        "llama_llama": true
+    },
+    {
+        "test": "Please write a formal letter to my teacher Laura Peters Johnson to ask her for my assignment",
+        "correct": true,
+        "presidio_presidio": false,
+        "presidio_gpt3.5":true,
+        "gpt3.5_gpt3.5": true,
+        "presidio_phi-3": true,
+        "phi-3_phi-3": true,
+        "presidio_mixtral": true,
+        "mixtral_mixtral": true,
+        "presidio_llama": true,
+        "llama_llama": true
+    },
+    {
+        "test": "I need to tell Peter Linde the following: Hello Peter how are you doing?",
+        "correct": true,
+        
+        "presidio_presidio": true,
+        
+        "presidio_gpt3.5": true,
+        "gpt3.5_gpt3.5": false,
+        
+        "presidio_phi-3": false,
+        "phi-3_phi-3": false,
+        
+        "presidio_mixtral": true,
+        "mixtral_mixtral": false,
+        
+        "presidio_llama": true,
+        "llama_llama": false
+    }   
+]
