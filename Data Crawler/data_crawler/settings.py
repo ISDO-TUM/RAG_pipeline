@@ -1,4 +1,4 @@
-# Scrapy settings for fraunhofer_crawler project
+# Scrapy settings for data_crawler project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -13,15 +13,15 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-BOT_NAME = "fraunhofer_crawler"
+BOT_NAME = "data_crawler"
 
-SPIDER_MODULES = ["fraunhofer_crawler.spiders"]
-NEWSPIDER_MODULE = "fraunhofer_crawler.spiders"
+SPIDER_MODULES = ["data_crawler.spiders"]
+NEWSPIDER_MODULE = "data_crawler.spiders"
 
 LOG_LEVEL = os.getenv('LOG_LEVEL', 'INFO')
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "fraunhofer_crawler (+http://www.yourdomain.com)"
+#USER_AGENT = "data_crawler (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -52,13 +52,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "fraunhofer_crawler.middlewares.FraunhoferCrawlerSpiderMiddleware": 543,
+#    "data_crawler.middlewares.DataCrawlerSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "fraunhofer_crawler.middlewares.FraunhoferCrawlerDownloaderMiddleware": 543,
+#    "data_crawler.middlewares.DataCrawlerDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -70,7 +70,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "fraunhofer_crawler.pipelines.FraunhoferCrawlerPipeline": 300,
+#    "data_crawler.pipelines.DataCrawlerPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

@@ -68,9 +68,9 @@ def extract_pdf_title(url):
 
 
 ################ CRAWLER ################
-class FraunhoferInstitutesSpider(CrawlSpider):
-    name = 'fraunhofer_crawler'
-    start_urls = ['https://www.fraunhofer.de']
+class TUMInstitutesSpider(CrawlSpider):
+    name = 'data_crawler'
+    start_urls = ['https://www.tum.de']
     visited_urls = set()
 
     MAX_FILE_NAME_LENGTH = 100
@@ -91,12 +91,12 @@ class FraunhoferInstitutesSpider(CrawlSpider):
             start_urls.append(institute['link'])
 
     # Define the domain to crawl
-    allowed_domains = ['fraunhofer.de']
+    allowed_domains = ['tum.de']
 
     # Rules to follow for crawling
     rules = (
         Rule(LinkExtractor(
-            allow_domains=['fraunhofer.de']), callback='parse_html', follow=False),
+            allow_domains=['tum.de']), callback='parse_html', follow=False),
             )
 
     def get_result_file_path(self, url):
@@ -189,5 +189,5 @@ class FraunhoferInstitutesSpider(CrawlSpider):
         # Extract and save files with different extensions
         for link in links:
             absolute_url = urljoin(response.url, link)
-            if 'fraunhofer' in absolute_url and absolute_url.endswith('.pdf'):
+            if 'tum' in absolute_url and absolute_url.endswith('.pdf'):
                 yield scrapy.Request(absolute_url, callback=self.parse_pdf)

@@ -1,6 +1,6 @@
-# Fraunhofer Web Data Crawler
+# Web Data Crawler
 
-This is a stand-alone Scrapy-based web crawler project for the Fraunhofer Gesellschaft's main site and all of its institutes.
+This is a stand-alone Scrapy-based web crawler project for the TUM's main site and all of its institutes.
 
 ## Requirements
 
